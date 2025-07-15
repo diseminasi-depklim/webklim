@@ -80,42 +80,81 @@ a {
 }
 
 .hover-submenu:hover {
-  display: inline-block;
-  border-bottom: blue 3px solid;
+  /* display: block; */
+  color: blue;
+  font-weight: bold;
 }
 
 .text-logo {
   font-size: 1.2rem;
 }
 
-/* Mega Menu */
-@media all and (min-width: 992px) {
+/* Desktop Mega Menu */
+@media (min-width: 992px) {
   .dropdown-menu {
-    width: 100%;
+    width: 70vw;
+    max-width: 1000px;
+    display: none;
+    right: 0;
+    left: auto;
   }
+
+  .ktm-mega-menu:hover .dropdown-menu {
+    display: block;
+  }
+
   .mega-submenu {
     left: 100%;
     top: 0;
     min-width: 25rem;
   }
+
   .ktm-mega-menu {
     position: relative;
     width: 100%;
-  }
-  .mega-menu {
-    right: 0;
   }
 
   .dropdown-menu li {
     position: relative;
   }
+
   .dropdown-menu .submenu {
     display: none;
     left: 100%;
     top: 0;
   }
+
   .dropdown-menu > li:hover > .submenu,
   .dropdown:hover > .dropdown-menu {
     display: block;
+  }
+}
+
+/* Mobile Mega Menu */
+@media (max-width: 991.98px) {
+  .dropdown-menu {
+    width: 100%;
+    position: static !important;
+    display: none;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+  }
+
+  .dropdown.show .dropdown-menu {
+    display: block;
+  }
+
+  .mega-menu .row {
+    flex-direction: column;
+  }
+
+  .mega-menu .col {
+    width: 100%;
+    padding-bottom: 0.5rem;
+  }
+
+  .ktm-mega-menu .dropdown-toggle::after {
+    display: none;
   }
 }
