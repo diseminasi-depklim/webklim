@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
 body {
   background-color: #eef2f5;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .section-title {
@@ -65,4 +70,54 @@ body {
 
 .standar-waktu {
   font-size: 0.8rem;
+}
+
+/* Mega Menu */
+@media all and (min-width: 992px) {
+  .dropdown-menu {
+    /* width: 13rem; */
+  }
+  .mega-submenu {
+    left: 100%;
+    top: 0;
+    min-width: 25rem;
+  }
+  .ktm-mega-menu {
+    position: static;
+  }
+  .mega-menu {
+    /* left: 0; */
+    right: 0;
+    width: 60%;
+    /* width: auto; */
+  }
+  .dropdown-menu li {
+    position: relative;
+  }
+  .dropdown-menu .submenu {
+    display: none;
+    left: 100%;
+    top: 0;
+  }
+  .dropdown-menu > li:hover > .submenu,
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.hover-submenu:hover {
+  /* background-color: rebeccapurple; */
+  display: inline-block;
+  border-bottom: blue 3px solid;
+}
+
+.text-logo {
+  font-size: 1.2rem;
 }
