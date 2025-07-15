@@ -62,3 +62,7 @@ body {
   object-fit: cover; /* atau 'contain' kalau mau seluruh gambar kelihatan */
   border-radius: 10px;
 }
+
+.standar-waktu {
+  font-size: 0.8rem;
+}
