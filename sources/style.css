@@ -72,6 +72,22 @@ body {
   font-size: 0.8rem;
 }
 
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.hover-submenu:hover {
+  display: inline-block;
+  border-bottom: blue 3px solid;
+}
+
+.text-logo {
+  font-size: 1.2rem;
+}
+
 /* Mega Menu */
 @media all and (min-width: 992px) {
   .dropdown-menu {
@@ -102,20 +118,4 @@ body {
   .dropdown:hover > .dropdown-menu {
     display: block;
   }
-}
-
-ul,
-li,
-a {
-  list-style: none;
-  text-decoration: none;
-}
-
-.hover-submenu:hover {
-  display: inline-block;
-  border-bottom: blue 3px solid;
-}
-
-.text-logo {
-  font-size: 1.2rem;
 }
