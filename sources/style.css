@@ -88,7 +88,6 @@ a {
 .text-logo {
   font-size: 1.2rem;
 }
-
 /* Desktop Mega Menu */
 @media (min-width: 992px) {
   .dropdown-menu {
@@ -157,4 +156,15 @@ a {
   .ktm-mega-menu .dropdown-toggle::after {
     display: none;
   }
+}
+
+.hover-submenu {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.hover-submenu:hover {
+  background-color: #f8f9fa;
 }
