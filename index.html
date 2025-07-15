@@ -1,117 +1,82 @@
 <!DOCTYPE html>
 <html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMKG - Beranda</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BMKG - Beranda</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="sources/style.css" />
+  </head>
 
-  <style>
-    body {
-      background-color: #eef2f5;
-    }
-
-    .section-title {
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 2rem;
-      text-align: center;
-    }
-
-    .card {
-      border: 1px solid #ddd;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card-img-top {
-      padding: 5px;
-      background-color: #fff;
-    }
-
-    .card-footer {
-      background-color: #f8f9fa;
-      font-size: 0.9rem;
-      text-align: center;
-    }
-
-    .footer-custom {
-      background-color: #cce0ff;
-      /* Biru muda untuk footer */
-      color: #333;
-    }
-
-    .footer-custom a {
-      color: #333;
-      text-decoration: none;
-    }
-
-    .footer-custom a:hover {
-      text-decoration: underline;
-    }
-
-    .carousel-caption h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    }
-  </style>
-</head>
-
-<body>
-  <!-- standar waktu -->
-  <div class="p-3 text-white sticky-top" style="background-color: #091F8F;">
-    <span>Selasa, 15 Juli 2025</span>
-    <span class="float-end">Standar Waktu Indonesia | 15 : 45 : 11/08 : 45 : 11 UTC</span>
-  </div>
-  <!-- Navbar -->
-  <nav class="navbar shadow-sm" style="background-color: #cce0ff;">
-    <div class="container">
-      <!-- Brand Logo -->
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <!-- <img src="https://placehold.co/40x40/ffffff/0d47a1?text=BMKG" alt="Logo BMKG" width="35" height="35"
+  <body>
+    <!-- standar waktu -->
+    <div class="p-3 text-white" style="background-color: #091f8f">
+      <span>Selasa, 15 Juli 2025</span>
+      <span class="float-end"
+        >Standar Waktu Indonesia | 15 : 45 : 11/08 : 45 : 11 UTC</span
+      >
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar shadow-sm sticky-top" style="background-color: #cce0ff">
+      <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <!-- <img src="https://placehold.co/40x40/ffffff/0d47a1?text=BMKG" alt="Logo BMKG" width="35" height="35"
           class="me-3"> -->
-        <img src="./assets/logo/logo-bmkg.png" alt="Logo BMKG" width="auto" height="64" class="me-3">
-        <div>
-          <span class="fw-bold">Badan Meteorologi, Klimatologi, dan Geofisika</span>
-          <br>
-          <span class="brand-subtitle">Deputi Bidang Klimatologi</span>
+          <img
+            src="./assets/logo/logo-bmkg.png"
+            alt="Logo BMKG"
+            width="auto"
+            height="64"
+            class="me-3"
+          />
+          <div>
+            <span class="fw-bold"
+              >Badan Meteorologi, Klimatologi, dan Geofisika</span
+            >
+            <br />
+            <span class="brand-subtitle">Deputi Bidang Klimatologi</span>
+          </div>
+        </a>
+        <!-- Navbar links -->
+        <div class="">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Peringatan Dini</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Prediksi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Monitoring</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Analisis</a>
+            </li>
+          </ul>
         </div>
-      </a>
-      <!-- Navbar links -->
-      <div class="">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Peringatan Dini</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Prediksi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Monitoring</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Analisis</a>
-          </li>
-        </ul>
-      </div>
-      <!-- Navbar links -->
-      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <!-- Navbar links -->
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button> -->
-      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -142,238 +107,382 @@
           </li>
         </ul>
       </div> -->
-    </div>
-  </nav>
-
-  <main class="container my-5">
-    <!-- Hero Carousel -->
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://placehold.co/1200x400/6c757d/ffffff?text=." class="d-block w-100" alt="Carousel Image">
-          <div class="carousel-caption d-none d-md-block">
-            <h1>GELOMBANG PANAS MELANDA ASIA</h1>
-            <p>BAGAIMANA DI INDONESIA?</p>
-          </div>
-        </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    </nav>
 
-    <!-- Peringatan Dini -->
-    <section class="mt-5">
-      <h2 class="section-title">Peringatan Dini</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://placehold.co/600x400/e8f5e9/333?text=Peta+Peringatan+Dini" class="card-img-top"
-              alt="Peta Cuaca">
-            <div class="card-footer">Peringatan Dini Cuaca</div>
+    <main class="container my-5">
+      <!-- Hero Carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/images/PDCHT_latest.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block bg-warning">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item rounded">
+            <img
+              src="assets/images/PDKM_latest.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block bg-warning">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item rounded">
+            <img
+              src="assets/images/anspi1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block bg-warning">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://placehold.co/600x400/fff3e0/333?text=Peta+Peringatan+Dini" class="card-img-top"
-              alt="Peta Iklim">
-            <div class="card-footer">Peringatan Dini Iklim</div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://placehold.co/600x400/ffebee/333?text=Peta+Gelombang" class="card-img-top"
-              alt="Peta Gelombang">
-            <div class="card-footer">Peringatan Dini Gelombang Tinggi</div>
-          </div>
-        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bg-warning rounded-circle"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bg-warning rounded-circle"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </section>
+      <!-- end of hero carousel -->
 
-    <!-- Prediksi -->
-    <section class="mt-5">
-      <h2 class="section-title">Prediksi</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://placehold.co/600x400/e3f2fd/333?text=Prakiraan+Cuaca" class="card-img-top"
-              alt="Prakiraan Cuaca">
-            <div class="card-footer">Prakiraan Cuaca Berbasis Dampak</div>
+      <!-- Peringatan Dini -->
+      <section class="mt-5">
+        <h2 class="section-title">Peringatan Dini</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://placehold.co/600x400/e8f5e9/333?text=Peta+Peringatan+Dini"
+                class="card-img-top"
+                alt="Peta Cuaca"
+              />
+              <div class="card-footer">Peringatan Dini Cuaca</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://placehold.co/600x400/fff3e0/333?text=Peta+Peringatan+Dini"
+                class="card-img-top"
+                alt="Peta Iklim"
+              />
+              <div class="card-footer">Peringatan Dini Iklim</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://placehold.co/600x400/ffebee/333?text=Peta+Gelombang"
+                class="card-img-top"
+                alt="Peta Gelombang"
+              />
+              <div class="card-footer">Peringatan Dini Gelombang Tinggi</div>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://placehold.co/600x400/f3e5f5/333?text=Prakiraan+Angin" class="card-img-top"
-              alt="Prakiraan Angin">
-            <div class="card-footer">Prakiraan Angin</div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://placehold.co/600x400/e0f7fa/333?text=Prakiraan+Potensi" class="card-img-top"
-              alt="Prakiraan Potensi">
-            <div class="card-footer">Prakiraan Potensi Hujan</div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Monitoring -->
-    <section class="mt-5">
-      <h2 class="section-title">Monitoring</h2>
-      <div class="row g-4 justify-content-center">
-        <div class="col-md-6">
-          <div class="card">
-            <img src="https://placehold.co/800x600/fafafa/333?text=Grafik+Analisis+Iklim" class="card-img-top"
-              alt="Grafik Iklim">
-            <div class="card-footer">Hari Tanpa Hujan Berturut-turut</div>
+      <!-- Prediksi -->
+      <section class="mt-5">
+        <h2 class="section-title">Prediksi</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://placehold.co/600x400/e3f2fd/333?text=Prakiraan+Cuaca"
+                class="card-img-top"
+                alt="Prakiraan Cuaca"
+              />
+              <div class="card-footer">Prakiraan Cuaca Berbasis Dampak</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://placehold.co/600x400/f3e5f5/333?text=Prakiraan+Angin"
+                class="card-img-top"
+                alt="Prakiraan Angin"
+              />
+              <div class="card-footer">Prakiraan Angin</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://placehold.co/600x400/e0f7fa/333?text=Prakiraan+Potensi"
+                class="card-img-top"
+                alt="Prakiraan Potensi"
+              />
+              <div class="card-footer">Prakiraan Potensi Hujan</div>
+            </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card">
-            <img src="https://placehold.co/800x600/00e676/333?text=Peta+Monitoring" class="card-img-top"
-              alt="Peta Suhu">
-            <div class="card-footer">Analisis Anomali Suhu Udara</div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Analisis -->
-    <section class="mt-5">
-      <h2 class="section-title">Analisis</h2>
-      <h3 class="h4 text-center text-muted mb-4">Analisis Hujan</h3>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://placehold.co/600x400/c8e6c9/333?text=Analisis+Curah+Hujan" class="card-img-top"
-              alt="Analisis Hujan 1">
-            <div class="card-footer">Analisis Curah Hujan (Harian)</div>
+      <!-- Monitoring -->
+      <section class="mt-5">
+        <h2 class="section-title">Monitoring</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6">
+            <div class="card">
+              <img
+                src="https://placehold.co/800x600/fafafa/333?text=Grafik+Analisis+Iklim"
+                class="card-img-top"
+                alt="Grafik Iklim"
+              />
+              <div class="card-footer">Hari Tanpa Hujan Berturut-turut</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <img
+                src="https://placehold.co/800x600/00e676/333?text=Peta+Monitoring"
+                class="card-img-top"
+                alt="Peta Suhu"
+              />
+              <div class="card-footer">Analisis Anomali Suhu Udara</div>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://placehold.co/600x400/a5d6a7/333?text=Analisis+Sifat+Hujan" class="card-img-top"
-              alt="Analisis Hujan 2">
-            <div class="card-footer">Analisis Sifat Hujan (Harian)</div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://placehold.co/600x400/81c784/333?text=Monitoring+Hari+Tanpa+Hujan" class="card-img-top"
-              alt="Analisis Hujan 3">
-            <div class="card-footer">Monitoring Hari Tanpa Hujan</div>
-          </div>
-        </div>
-      </div>
+      </section>
 
-      <h3 class="h4 text-center text-muted mt-5 mb-4">Analisis Dasarian</h3>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://placehold.co/600x400/b3e5fc/333?text=Peta+Dasarian+1" class="card-img-top"
-              alt="Analisis Dasarian 1">
-            <div class="card-footer">Suhu Muka Laut</div>
+      <!-- Analisis -->
+      <section class="mt-5">
+        <h2 class="section-title">Analisis</h2>
+        <h3 class="h4 text-center text-muted mb-4">Analisis Hujan</h3>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://placehold.co/600x400/c8e6c9/333?text=Analisis+Curah+Hujan"
+                class="card-img-top"
+                alt="Analisis Hujan 1"
+              />
+              <div class="card-footer">Analisis Curah Hujan (Harian)</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://placehold.co/600x400/a5d6a7/333?text=Analisis+Sifat+Hujan"
+                class="card-img-top"
+                alt="Analisis Hujan 2"
+              />
+              <div class="card-footer">Analisis Sifat Hujan (Harian)</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://placehold.co/600x400/81c784/333?text=Monitoring+Hari+Tanpa+Hujan"
+                class="card-img-top"
+                alt="Analisis Hujan 3"
+              />
+              <div class="card-footer">Monitoring Hari Tanpa Hujan</div>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://placehold.co/600x400/81d4fa/333?text=Peta+Dasarian+2" class="card-img-top"
-              alt="Analisis Dasarian 2">
-            <div class="card-footer">Angin Zonal</div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://placehold.co/600x400/4fc3f7/333?text=Peta+Dasarian+3" class="card-img-top"
-              alt="Analisis Dasarian 3">
-            <div class="card-footer">Angin Meridional</div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://placehold.co/600x400/ffcdd2/333?text=Peta+Dasarian+4" class="card-img-top"
-              alt="Analisis Dasarian 4">
-            <div class="card-footer">Outgoing Longwave Radiation</div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://placehold.co/600x400/ef9a9a/333?text=Peta+Dasarian+5" class="card-img-top"
-              alt="Analisis Dasarian 5">
-            <div class="card-footer">Madden Julian Oscillation</div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://placehold.co/600x400/d1c4e9/333?text=Peta+Dasarian+6" class="card-img-top"
-              alt="Analisis Dasarian 6">
-            <div class="card-footer">Indeks ENSO & Dipole Mode</div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="footer-custom pt-5 pb-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <!-- <h5 class="fw-bold"><img src="https://placehold.co/40x40/0d47a1/ffffff?text=BMKG" alt="Logo BMKG" width="30"
+        <h3 class="h4 text-center text-muted mt-5 mb-4">Analisis Dasarian</h3>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://placehold.co/600x400/b3e5fc/333?text=Peta+Dasarian+1"
+                class="card-img-top"
+                alt="Analisis Dasarian 1"
+              />
+              <div class="card-footer">Suhu Muka Laut</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://placehold.co/600x400/81d4fa/333?text=Peta+Dasarian+2"
+                class="card-img-top"
+                alt="Analisis Dasarian 2"
+              />
+              <div class="card-footer">Angin Zonal</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://placehold.co/600x400/4fc3f7/333?text=Peta+Dasarian+3"
+                class="card-img-top"
+                alt="Analisis Dasarian 3"
+              />
+              <div class="card-footer">Angin Meridional</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://placehold.co/600x400/ffcdd2/333?text=Peta+Dasarian+4"
+                class="card-img-top"
+                alt="Analisis Dasarian 4"
+              />
+              <div class="card-footer">Outgoing Longwave Radiation</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://placehold.co/600x400/ef9a9a/333?text=Peta+Dasarian+5"
+                class="card-img-top"
+                alt="Analisis Dasarian 5"
+              />
+              <div class="card-footer">Madden Julian Oscillation</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://placehold.co/600x400/d1c4e9/333?text=Peta+Dasarian+6"
+                class="card-img-top"
+                alt="Analisis Dasarian 6"
+              />
+              <div class="card-footer">Indeks ENSO & Dipole Mode</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-custom pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <!-- <h5 class="fw-bold"><img src="https://placehold.co/40x40/0d47a1/ffffff?text=BMKG" alt="Logo BMKG" width="30"
               height="30" class="me-2"> BMKG</h5> -->
-          <img src="./assets/logo/logo-bmkg.png" alt="Logo BMKG" width="auto" height="64" class="mb-3">
-          <h5 class="fw-bold">Kontak Kami</h5>
-          <p>
-            KONTAK KAMI Jl. Angkasa I No.2 Kemayoran, Jakarta Pusat 10610, PO Box 3540 Jkt. 
-            Contact Center (021) 196 Faks (021) 4246703 cc196[at]bmkg.go.id
-          </p>
-        </div>
-        <div class="col-md-4 col-4 mb-4">
-          <h5 class="fw-bold">Tautan</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Cuaca</a></li>
-            <li><a href="#">Iklim</a></li>
-            <li><a href="#">Kualitas Udara</a></li>
-            <li><a href="#">Gempabumi & Tsunami</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="mb-3">
-            <h5 class="fw-bold">Call Centre</h5>
-            <p>196</p>
+            <img
+              src="./assets/logo/logo-bmkg.png"
+              alt="Logo BMKG"
+              width="auto"
+              height="64"
+              class="mb-3"
+            />
+            <h5 class="fw-bold">Kontak Kami</h5>
+            <p>
+              KONTAK KAMI Jl. Angkasa I No.2 Kemayoran, Jakarta Pusat 10610, PO
+              Box 3540 Jkt. Contact Center (021) 196 Faks (021) 4246703
+              cc196[at]bmkg.go.id
+            </p>
           </div>
-          <div>
-            <h5 class="fw-bold">Download Aplikasi</h5>
-            <a href="#"><img src="https://bmkg.go.id/asset/img/app-store-badge.svg" alt="App Store" height="40"></a>
-            <a href="#"><img src="https://bmkg.go.id/asset/img/google-play-badge.svg" alt="Google Play" height="40"></a>
+          <div class="col-md-4 col-4 mb-4">
+            <h5 class="fw-bold">Tautan</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Cuaca</a></li>
+              <li><a href="#">Iklim</a></li>
+              <li><a href="#">Kualitas Udara</a></li>
+              <li><a href="#">Gempabumi & Tsunami</a></li>
+            </ul>
           </div>
-          <div class="mt-3">
-            <h5 class="fw-bold">Media Sosial</h5>
-            <a href="#" class="fs-4 me-2"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="fs-4 me-2"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="fs-4 me-2"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="fs-4 me-2"><i class="bi bi-youtube"></i></a>
-            <a href="#" class="fs-4"><i class="bi bi-tiktok"></i></a>
+          <div class="col-md-4 mb-4">
+            <div class="mb-3">
+              <h5 class="fw-bold">Call Centre</h5>
+              <p>196</p>
+            </div>
+            <div>
+              <h5 class="fw-bold">Download Aplikasi</h5>
+              <a href="#"
+                ><img
+                  src="https://bmkg.go.id/asset/img/app-store-badge.svg"
+                  alt="App Store"
+                  height="40"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://bmkg.go.id/asset/img/google-play-badge.svg"
+                  alt="Google Play"
+                  height="40"
+              /></a>
+            </div>
+            <div class="mt-3">
+              <h5 class="fw-bold">Media Sosial</h5>
+              <a href="#" class="fs-4 me-2"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="fs-4 me-2"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="fs-4 me-2"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="fs-4 me-2"><i class="bi bi-youtube"></i></a>
+              <a href="#" class="fs-4"><i class="bi bi-tiktok"></i></a>
+            </div>
           </div>
         </div>
       </div>
+    </footer>
+
+    <div
+      class="sub-footer text-center text-light p-4"
+      style="background-color: #0d47a1"
+    >
+      <div class="container">
+        © 2025 - Badan Meteorologi, Klimatologi, dan Geofisika
+      </div>
     </div>
-  </footer>
 
-  <div class="sub-footer text-center text-light p-4" style="background-color: #0d47a1;">
-    <div class="container">
-      © 2025 - Badan Meteorologi, Klimatologi, dan Geofisika
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="sources/script.js"></script>
+  </body>
 </html>
