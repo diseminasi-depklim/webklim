@@ -60,7 +60,7 @@ nav .wrapper {
 
 .nav-links .drop-menu {
   position: absolute;
-  background: #242526;
+  /* background: rebeccapurple; */
   width: 180px;
   line-height: 45px;
   top: 85px;
@@ -71,8 +71,9 @@ nav .wrapper {
 
 .nav-links li:hover .drop-menu,
 .nav-links li:hover .mega-box {
+  background-color: cadetblue;
   transition: all 0.3s ease;
-  top: 70px;
+  top: 40px;
   opacity: 1;
   visibility: visible;
 }
@@ -86,6 +87,7 @@ nav .wrapper {
 }
 
 .mega-box {
+  /* background-color: #b80202; */
   position: absolute;
   left: 0;
   width: 100%;
@@ -96,7 +98,7 @@ nav .wrapper {
 }
 
 .mega-box .content {
-  background: #242526;
+  background: red;
   padding: 25px 20px;
   display: flex;
   width: 100%;
@@ -259,11 +261,12 @@ nav .wrapper {
   }
 
   .mega-box {
+    background-color: #b80202;
     position: static;
-    top: 65px;
+    /* top: 65px; */
     opacity: 1;
     visibility: visible;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     max-height: 0px;
     overflow: hidden;
     transition: all 0.3s ease;

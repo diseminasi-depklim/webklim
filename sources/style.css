@@ -1,21 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 
+/* Global Styling */
+:root {
+  --primary-color: #0d47a1;
+  --secondary-color: #cce0ff;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+  --light-color: #ffffff;
+  --dark-color: #343a40;
+}
+
 body {
-  background-color: #eef2f5;
+  background-color: var(--light-color);
   font-family: "League Spartan", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
+.standar-waktu {
+  font-size: 0.8rem;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
 .section-title {
   font-weight: bold;
-  color: #333;
+  color: var(--dark-color);
   margin-bottom: 2rem;
   text-align: center;
 }
 
+/* navbar */
+.standar-waktu {
+  background-color: var(--secondary-color);
+}
+
+nav {
+  background-color: var(--primary-color);
+  color: yellow;
+}
+
+.text-logo {
+  font-size: 1.2rem;
+  color: var(--light-color);
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: var(--light-color) !important;
+}
+.dropdown-item {
+  border-radius: 0;
+  color: var(--primary-color);
+}
+
+.nav-item:hover,
+.dropdown-item:hover {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+/* card */
 .card {
-  border: 1px solid #ddd;
+  border: 1px solid var(--dark-color);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
@@ -26,17 +81,18 @@ body {
 
 .card-img-top {
   padding: 5px;
-  background-color: #fff;
+  background-color: var(--light-color);
 }
 
 .card-footer {
-  background-color: #f8f9fa;
+  background-color: var(--secondary-color);
   font-size: 0.9rem;
   text-align: center;
 }
 
+/* footer */
 .footer-custom {
-  background-color: #cce0ff;
+  background-color: var(--secondary-color);
   /* Biru muda untuk footer */
   color: #333;
 }
@@ -50,6 +106,11 @@ body {
   text-decoration: underline;
 }
 
+.sub-footer {
+  background-color: var(--primary-color);
+}
+
+/* carousel */
 .carousel-caption h1 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -65,112 +126,4 @@ body {
 
 .carousel-item img {
   object-fit: cover; /* atau 'contain' kalau mau seluruh gambar kelihatan */
-}
-
-.standar-waktu {
-  font-size: 0.8rem;
-}
-
-ul,
-li,
-a {
-  list-style: none;
-  text-decoration: none;
-}
-
-.hover-submenu:hover {
-  /* display: block; */
-  color: blue;
-  font-weight: bold;
-}
-
-.text-logo {
-  font-size: 1.2rem;
-}
-/* Desktop Mega Menu */
-@media (min-width: 992px) {
-  body {
-    background-color: aqua;
-  }
-  .dropdown-menu {
-    width: 70vw;
-    max-width: 1000px;
-    display: none;
-    right: 0;
-    left: auto;
-  }
-
-  .ktm-mega-menu:hover .dropdown-menu {
-    display: block;
-  }
-
-  .mega-submenu {
-    left: 100%;
-    top: 0;
-    min-width: 25rem;
-  }
-
-  .ktm-mega-menu {
-    position: relative;
-    width: 100%;
-  }
-
-  .dropdown-menu li {
-    position: relative;
-  }
-
-  .dropdown-menu .submenu {
-    display: none;
-    left: 100%;
-    top: 0;
-  }
-
-  .dropdown-menu > li:hover > .submenu,
-  .dropdown:hover > .dropdown-menu {
-    display: block;
-  }
-}
-
-/* Mobile Mega Menu */
-@media only screen and (min-width: 600px) {
-  body {
-    background-color: red;
-  }
-
-  .dropdown-menu {
-    width: 100%;
-    position: static !important;
-    display: none;
-    box-shadow: none;
-    border: none;
-    padding: 0;
-  }
-
-  .dropdown.show .dropdown-menu {
-    display: block;
-  }
-
-  .mega-menu .row {
-    flex-direction: column;
-  }
-
-  .mega-menu .col {
-    width: 100%;
-    padding-bottom: 0.5rem;
-  }
-
-  .ktm-mega-menu .dropdown-toggle::after {
-    display: none;
-  }
-}
-
-.hover-submenu {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: #000;
-  text-decoration: none;
-}
-
-.hover-submenu:hover {
-  background-color: #f8f9fa;
 }

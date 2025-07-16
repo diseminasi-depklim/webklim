@@ -21,13 +21,107 @@
 
   <body>
     <!-- standar waktu -->
-    <div class="p-2 standar-waktu d-flex justify-content-around flex-sm-wrap">
+    <div class="p-2 text-white standar-waktu" style="background-color: #091f8f">
       <span>Selasa, 15 Juli 2025</span>
-      <span>Standar Waktu Indonesia | 15 : 45 : 11/08 : 45 : 11 UTC</span>
+      <span class="float-end"
+        >Standar Waktu Indonesia | 15 : 45 : 11/08 : 45 : 11 UTC</span
+      >
     </div>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <!-- mega menu -->
+    <!-- <div class="bg-primary sticky-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+          <div
+            class="container-fluid d-flex justify-content-between align-items-center"
+          >
+            <a class="navbar-brand d-flex align-items-center" href="#">
+              <img
+                src="https://www.bmkg.go.id/asset/img/logo/logo-bmkg.png"
+                alt="Logo BMKG"
+                height="64"
+                class="me-3"
+              />
+              <div class="text-logo d-none d-md-block text-white">
+                <span class="fw-bold"
+                  >Badan Meteorologi, Klimatologi, dan Geofisika</span
+                ><br />
+                <span class="brand-subtitle">Deputi Bidang Klimatologi</span>
+              </div>
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#main_nav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse justify-content-end lh-lg"
+              id="main_nav"
+            >
+              <ul class="navbar-nav ms-auto p-3 p-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item dropdown ktm-mega-menu">
+                  <a class="nav-link dropdown-toggle" href="#">Menu</a>
+                  <div class="dropdown-menu mega-menu p-3 bg-light">
+                    <div
+                      class="row justify-content-center align-items-start g-2"
+                    >
+                      <div class="col">
+                        <a href="#" class="hover-submenu">Submenu 1</a>
+                        <a href="#" class="hover-submenu">Submenu 2</a>
+                        <a href="#" class="hover-submenu">Submenu 3</a>
+                      </div>
+                      <div class="col">
+                        <a href="#" class="hover-submenu">Submenu 4</a>
+                        <a href="#" class="hover-submenu">Submenu 5</a>
+                        <a href="#" class="hover-submenu">Submenu 6</a>
+                      </div>
+                      <div class="col">
+                        <a href="#" class="hover-submenu">Submenu 7</a>
+                        <a href="#" class="hover-submenu">Submenu 8</a>
+                        <a href="#" class="hover-submenu">Submenu 9</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown ktm-mega-menu">
+                  <a class="nav-link dropdown-toggle" href="#">Menu 2</a>
+                  <div class="dropdown-menu mega-menu p-3 bg-light">
+                    <div
+                      class="row justify-content-center align-items-start g-2"
+                    >
+                      <div class="col">
+                        <a href="#" class="hover-submenu">Link A</a>
+                        <a href="#" class="hover-submenu">Link B</a>
+                      </div>
+                      <div class="col">
+                        <a href="#" class="hover-submenu">Link C</a>
+                        <a href="#" class="hover-submenu">Link D</a>
+                      </div>
+                      <div class="col">
+                        <a href="#" class="hover-submenu">Link E</a>
+                        <a href="#" class="hover-submenu">Link F</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div> -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
           <img
@@ -44,7 +138,7 @@
           </div>
         </a>
         <button
-          class="navbar-toggler text-light"
+          class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -52,17 +146,17 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon text-light"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item p-2">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 bg-warning">
+            <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Beranda</a>
             </li>
-            <li class="nav-item p-2">
+            <li class="nav-item">
               <a class="nav-link" href="#">Menu1</a>
             </li>
-            <li class="nav-item p-2 dropdown">
+            <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -81,7 +175,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item p-2 dropdown">
+            <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -100,7 +194,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item p-2 dropdown">
+            <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -137,9 +231,15 @@
           />
 
           <div class="carousel-caption">
-            <h3 class="display-4 rounded">
+            <h3 class="display-4 bg-warning">
               The Role of CSS Frameworks in a Post-JavaScript World
             </h3>
+            <p class="bg-warning">
+              Introduction: As JavaScript frameworks like React, Vue, and
+              Angular take the spotlight, many developers are reconsidering the
+              importance of CSS frameworks in modern development. This article
+              explores the potential future
+            </p>
           </div>
         </div>
 
@@ -152,9 +252,15 @@
           />
 
           <div class="carousel-caption">
-            <h3 class="display-4 rounded">
+            <h3 class="display-4 bg-warning">
               CSS in 2030: Will Utility-First Frameworks Dominate the Future?
             </h3>
+            <p class="bg-warning">
+              Introduction: CSS has come a long way, and in recent years,
+              utility-first frameworks like Tailwind CSS have transformed how we
+              think about styling websites. This article will discuss the
+              evolution
+            </p>
           </div>
         </div>
 
@@ -167,10 +273,16 @@
           />
 
           <div class="carousel-caption">
-            <h3 class="display-4 rounded">
+            <h3 class="display-4 bg-warning">
               Bootstrap vs. Tailwind: Which CSS Framework Is Right for Your
               Project?
             </h3>
+            <p class="bg-warning">
+              In this article, we will explore the key differences between
+              Bootstrap and Tailwind, two of the most popular CSS frameworks
+              available today. While both frameworks aim to simplify web
+              development,
+            </p>
           </div>
         </div>
 
@@ -183,10 +295,16 @@
           />
 
           <div class="carousel-caption">
-            <h3 class="display-4 rounded">
+            <h3 class="display-4 bg-warning">
               Getting Started with Bootstrap 5.3: An Essential Guide for
               Beginners
             </h3>
+            <p class="bg-warning">
+              Bootstrap has long been a go-to front-end framework for developers
+              seeking to create responsive, mobile-first websites quickly and
+              efficiently. With the release of Bootstrap 5.3, the framework
+              introduces several enhancements
+            </p>
           </div>
         </div>
       </div>
@@ -199,7 +317,7 @@
         data-bs-slide="prev"
       >
         <span
-          class="carousel-control-prev-icon p-2 rounded-circle"
+          class="carousel-control-prev-icon bg-warning"
           aria-hidden="true"
         ></span>
         <span class="visually-hidden">Previous</span>
@@ -213,7 +331,7 @@
         data-bs-slide="next"
       >
         <span
-          class="carousel-control-next-icon p-2 rounded-circle"
+          class="carousel-control-next-icon bg-warning"
           aria-hidden="true"
         ></span>
         <span class="visually-hidden">Next</span>
@@ -490,7 +608,10 @@
       </div>
     </footer>
 
-    <div class="sub-footer text-center text-light p-4">
+    <div
+      class="sub-footer text-center text-light p-4"
+      style="background-color: #0d47a1"
+    >
       <div class="container">
         © 2025 - Badan Meteorologi, Klimatologi, dan Geofisika
       </div>
