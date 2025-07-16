@@ -21,8 +21,6 @@ nav .wrapper {
   position: relative;
   max-width: 1300px;
   padding: 0px 30px;
-  height: 60px;
-  line-height: 70px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -31,8 +29,6 @@ nav .wrapper {
 
 .wrapper .logo a {
   color: #f2f2f2;
-  font-size: 30px;
-  font-weight: 600;
   text-decoration: none;
 }
 
